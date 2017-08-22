@@ -23,7 +23,9 @@
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
         <module name="mf_test_entity" />
+        <module name="mf_test_schedule_job" />
         <module name="mf_test_wsb" />
+        <module name="test_service.test" />
         <module name="untitled" />
       </profile>
     </annotationProcessing>
