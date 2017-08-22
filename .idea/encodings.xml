@@ -2,6 +2,6 @@
 <project version="4">
   <component name="Encoding" useUTFGuessing="true" native2AsciiForPropertiesFiles="false">
     <file url="file://$PROJECT_DIR$/mf_test_schedule_job" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/mf_test_service_test/src/main/resources/application.yml" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/mf_test_service" charset="UTF-8" />
   </component>
 </project>

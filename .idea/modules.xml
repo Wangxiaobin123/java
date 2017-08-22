@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/mf_parent.iml" filepath="$PROJECT_DIR$/mf_parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" filepath="$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" filepath="$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_service_test/test_service.test.iml" filepath="$PROJECT_DIR$/mf_test_service_test/test_service.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf_test_service/mf_test_service.iml" filepath="$PROJECT_DIR$/mf_test_service/mf_test_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf_test_utils/mf_test_utils.iml" filepath="$PROJECT_DIR$/mf_test_utils/mf_test_utils.iml" />
     </modules>
   </component>
 </project>

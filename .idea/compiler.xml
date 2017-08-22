@@ -24,14 +24,16 @@
         <processorPath useClasspath="true" />
         <module name="mf_test_entity" />
         <module name="mf_test_schedule_job" />
+        <module name="mf_test_service" />
+        <module name="mf_test_utils" />
         <module name="mf_test_wsb" />
-        <module name="test_service.test" />
         <module name="untitled" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="mf_test" target="1.6" />
       <module name="mf_test_schedule_job" target="1.6" />
+      <module name="mf_test_service" target="1.6" />
     </bytecodeTargetLevel>
   </component>
 </project>
