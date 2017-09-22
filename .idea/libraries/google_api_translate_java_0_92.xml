@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="google-api-translate-java-0.92">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/translate/google-api-translate-java-0.92.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

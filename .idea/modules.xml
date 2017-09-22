@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/checkStyle/checkStyle.iml" filepath="$PROJECT_DIR$/checkStyle/checkStyle.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_parent.iml" filepath="$PROJECT_DIR$/mf_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" filepath="$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" filepath="$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_service/mf_test_service.iml" filepath="$PROJECT_DIR$/mf_test_service/mf_test_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_utils/mf_test_utils.iml" filepath="$PROJECT_DIR$/mf_test_utils/mf_test_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf_test_service/test_service.iml" filepath="$PROJECT_DIR$/mf_test_service/test_service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/mf_test_utils/test_utils.iml" filepath="$PROJECT_DIR$/mf_test_utils/test_utils.iml" />
     </modules>
   </component>
 </project>
