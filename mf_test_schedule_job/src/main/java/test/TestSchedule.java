@@ -11,6 +11,8 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
  * Created by BFD-194 on 2017/2/10.
+ *
+ * @author tag: shengbin
  */
 @Configuration
 @EnableAutoConfiguration
@@ -19,8 +21,15 @@ import org.springframework.scheduling.annotation.EnableScheduling;
 @EnableScheduling
 public class TestSchedule {
 
+    /**
+     * log
+     */
     private static Logger logger = LoggerFactory.getLogger(TestSchedule.class);
 
+
+    /**
+     * @param args DataManager
+     */
     public static void main(String[] args) {
         SpringApplication.run(TestSchedule.class, args);
         logger.info("[TestSchedule Model] start report job successful");

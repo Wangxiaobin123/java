@@ -4,10 +4,12 @@ import com.google.api.translate.Translate;
 
 /**
  * Created by shengbin on 2017/8/22.
+ *
+ * @author tag: shengbin
  */
 public class DataSourceUtils {
     /**
-     * @param args
+     * @param args DataManager
      */
     @SuppressWarnings("deprecation")
     public static void main(String[] args) {
