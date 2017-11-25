@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 /**
- * Created by BFD-194 on 2017/2/10.
+ * 2017/2/10.
  *
  * @author tag: shengbin
  */

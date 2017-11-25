@@ -8,6 +8,7 @@
       <module fileurl="file://$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" filepath="$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_test_service/test_service.iml" filepath="$PROJECT_DIR$/mf_test_service/test_service.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_test_utils/test_utils.iml" filepath="$PROJECT_DIR$/mf_test_utils/test_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" filepath="$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" />
     </modules>
   </component>
 </project>

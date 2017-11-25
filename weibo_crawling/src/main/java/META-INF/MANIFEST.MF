@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Class-Path: D:\mygitHub\weibo_crawling\src\main\java
+Main-Class: DataSourceUtils
+

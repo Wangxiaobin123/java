@@ -20,9 +20,7 @@ public class DataSourceUtils {
             trans = Translate.translate("你好", Language.CHINESE,
                     Language.ENGLISH);
             //		汉译英
-//			trans = Translate.translate("hello", Language.ENGLISH, Language.CHINESE);
             System.out.println(trans);
-//             英译汉
         } catch (Exception e) {
             // TODO Auto-generated catch block
             e.printStackTrace();

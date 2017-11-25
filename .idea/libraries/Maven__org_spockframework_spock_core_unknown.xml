@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.spockframework:spock-core:unknown">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/unknown/spock-core-unknown.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/unknown/spock-core-unknown-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/spockframework/spock-core/unknown/spock-core-unknown-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
