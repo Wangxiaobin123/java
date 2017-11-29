@@ -3,11 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/checkStyle/checkStyle.iml" filepath="$PROJECT_DIR$/checkStyle/checkStyle.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entity/entity.iml" filepath="$PROJECT_DIR$/entity/entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_parent.iml" filepath="$PROJECT_DIR$/mf_parent.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" filepath="$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" filepath="$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_service/test_service.iml" filepath="$PROJECT_DIR$/mf_test_service/test_service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/mf_test_utils/test_utils.iml" filepath="$PROJECT_DIR$/mf_test_utils/test_utils.iml" />
+      <module fileurl="file://$PROJECT_DIR$/schedule/schedule.iml" filepath="$PROJECT_DIR$/schedule/schedule.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/utils/utils.iml" filepath="$PROJECT_DIR$/utils/utils.iml" />
       <module fileurl="file://$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" filepath="$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" />
     </modules>
   </component>

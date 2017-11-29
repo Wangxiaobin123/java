@@ -1,21 +1,22 @@
 import org.elasticsearch.action.bulk.BulkRequestBuilder;
 import org.elasticsearch.action.bulk.BulkResponse;
+import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
 import org.elasticsearch.client.transport.TransportClient;
+import org.elasticsearch.cluster.metadata.MetaData;
 import org.elasticsearch.common.network.NetworkModule;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.TransportAddress;
 import org.elasticsearch.common.unit.TimeValue;
-import org.elasticsearch.index.query.BoolQueryBuilder;
-import org.elasticsearch.index.query.QueryBuilders;
-import org.elasticsearch.index.query.RangeQueryBuilder;
+import org.elasticsearch.index.query.*;
 import org.elasticsearch.index.reindex.ReindexPlugin;
 import org.elasticsearch.join.ParentJoinPlugin;
 import org.elasticsearch.percolator.PercolatorPlugin;
 import org.elasticsearch.plugins.Plugin;
 import org.elasticsearch.script.mustache.MustachePlugin;
 import org.elasticsearch.search.SearchHit;
+import org.elasticsearch.search.slice.SliceBuilder;
 import org.elasticsearch.search.sort.FieldSortBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.Netty4Plugin;
@@ -40,51 +41,75 @@ import static org.junit.Assert.fail;
  */
 public class EsUtilsTest {
     private static final Logger logger = LoggerFactory.getLogger(EsUtilsTest.class);
+    private static TransportClient client;
+    private static final String HOST_NAME = "172.24.5.132";
+    private static final Integer PORT = 9305;
 
     public static void main(String[] args) {
-        //9300端口是tcp
-        try {
-            long startTime = 1507518000000L;
-            long endTime = 1511539200000L;
-            TransportClient client = new PreBuiltTransportClient(clientSettings()).
-                    addTransportAddress(new TransportAddress(
-                            InetAddress.getByName("172.24.5.132"), 9305));
-            while (startTime <= endTime) {
-                long t1 = startTime;
-                startTime = startTime + 1000 * 60 * 60;
-                SearchResponse response = client.prepareSearch("bfd_mf")
-                        .setTypes("logs")
+        //9300端口是tcp 1507787100000L + 1000 * 60 * 60*2
+        long startTime = 1510105320000L;
+        long endTime = 1511539200000L;
+        client = getClient();
+        while (startTime <= endTime) {
+            long t1 = startTime;
+            startTime = startTime + 1000 * 60 * 3;
+            SearchResponse response = null;
+            if (client != null) {
+                response = getSearchRequestBuilder()
                         .addSort(FieldSortBuilder.DOC_FIELD_NAME, SortOrder.ASC)
-                        .setScroll(new TimeValue(120000))
+                        .setScroll(TimeValue.timeValueMinutes(5))
                         .setSize(50)
-                        .setSearchType(SearchType.DFS_QUERY_THEN_FETCH)
+                        .setSearchType(SearchType.QUERY_THEN_FETCH)
                         .setQuery(conditionQuery(t1, startTime))
-                        .setExplain(true)
+                        //.setExplain(true)
                         .get();
-                logger.info("response return totalNum:{},startTime:{}", response.getHits().totalHits,t1);
-                //批量写入
-                BulkRequestBuilder bulkRequest = client.prepareBulk();
-                do {
-                    long start = System.currentTimeMillis();
-                    for (SearchHit hit : response.getHits().getHits()) {
-                        Map<String, Object> sourceAsMap = hit.getSourceAsMap();
-                        bulkRequest.add(client.prepareIndex("bfd_mf_v1", "doc", hit.getId())
-                                .setSource(sourceAsMap));
-                        BulkResponse bulkItemResponses = bulkRequest.get();
-                        if (bulkItemResponses.hasFailures()) {
-                            logger.warn("写入ES失败：{}", sourceAsMap);
-                        }
-                    }
-                    long end = System.currentTimeMillis();
-                    logger.info("成功写入ES总计时：{},总量为：{}",
-                            (double) (end - start) / (1000 * 60), response.getHits().getHits().length);
-                    response = client.prepareSearchScroll(response.getScrollId())
-                            .setScroll(new TimeValue(120000)).execute().actionGet();
-                } while (response.getHits().getHits().length != 0);
+            } else {
+                System.exit(-1);
             }
+            logger.info("response return totalNum:{},startTime:{}", response.getHits().totalHits, t1);
+            //批量写入
+            BulkRequestBuilder bulkRequest = client.prepareBulk();
+            do {
+                long start = System.currentTimeMillis();
+                for (SearchHit hit : response.getHits().getHits()) {
+                    Map<String, Object> sourceAsMap = hit.getSourceAsMap();
+                    bulkRequest.add(client.prepareIndex("bfd_mf_v1", "doc", hit.getId())
+                            .setSource(sourceAsMap));
+                    BulkResponse bulkItemResponses = bulkRequest.get();
+                    if (bulkItemResponses.hasFailures()) {
+                        logger.warn("写入ES失败：{}", sourceAsMap);
+                    }
+                }
+                long end = System.currentTimeMillis();
+                logger.info("成功写入ES总计时：{},总量为：{}",
+                        (double) (end - start) / (1000 * 60), response.getHits().getHits().length);
+                response = client.prepareSearchScroll(response.getScrollId())
+                        .setScroll(TimeValue.timeValueMinutes(2)).execute().actionGet();
+            } while (response.getHits().getHits().length != 0);
+        }
+    }
+
+    /**
+     * @return SearchRequestBuilder
+     */
+    private static SearchRequestBuilder getSearchRequestBuilder() {
+        return client.prepareSearch("bfd_mf")
+                .setTypes("logs");
+    }
+
+    /**
+     * @return Transport client
+     */
+    @org.jetbrains.annotations.Nullable
+    private static TransportClient getClient() {
+        try {
+            return new PreBuiltTransportClient(clientSettings()).
+                    addTransportAddress(new TransportAddress(
+                            InetAddress.getByName(HOST_NAME), PORT));
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }
+        return null;
     }
 
     /**
@@ -118,6 +143,32 @@ public class EsUtilsTest {
                 .from(startTime, true)
                 .to(endTime, true);
     }
+
+    /**
+     * 测试得到指定字段的数据
+     */
+   @Test
+   public void testGet(){
+       client = getClient();
+       SearchRequestBuilder searchRequestBuilder = getSearchRequestBuilder();
+       SearchResponse searchResponse = searchRequestBuilder.setSize(3)
+               .storedFields("docType").get();
+       logger.info("总数：{}",searchResponse.getHits().totalHits);
+       for (SearchHit hit : searchResponse.getHits().getHits()) {
+           System.out.println(hit.getSourceAsMap());
+       }
+   }
+    @Test
+    public void testBulkRequestBuilder() {
+        TransportClient transportClient = getClient();
+        assert transportClient != null;
+        BulkRequestBuilder bulkRequest = transportClient.prepareBulk();
+        bulkRequest.add(client.prepareIndex("bfd_mf_v1", "doc"));
+        long length = bulkRequest.get().getItems().length;
+        System.out.println(length);
+
+    }
+
 
     @Test
     public void testPluginInstalled() {

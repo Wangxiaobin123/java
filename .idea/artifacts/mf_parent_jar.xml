@@ -4,9 +4,9 @@
     <root id="archive" name="mf_parent.jar">
       <element id="module-output" name="checkStyle" />
       <element id="module-output" name="mf_parent" />
-      <element id="module-output" name="mf_test_schedule_job" />
-      <element id="module-output" name="test_service" />
-      <element id="module-output" name="test_utils" />
+      <element id="module-output" name="schedule" />
+      <element id="module-output" name="service" />
+      <element id="module-output" name="utils" />
       <element id="module-output" name="weibo_crawling" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/slf4j/jcl-over-slf4j/1.7.5/jcl-over-slf4j-1.7.5.jar" path-in-jar="/" />
       <element id="extracted-dir" path="$MAVEN_REPOSITORY$/org/springframework/spring-context/4.3.2.RELEASE/spring-context-4.3.2.RELEASE.jar" path-in-jar="/" />
