@@ -49,7 +49,6 @@
     <orderEntry type="library" name="Maven: redis.clients:jedis:2.8.2" level="project" />
     <orderEntry type="library" name="Maven: com.wandoulabs.nedis:codis-client:0.1.1" level="project" />
     <orderEntry type="library" name="Maven: com.wandoulabs.nedis:nedis-client:0.1.1" level="project" />
-    <orderEntry type="library" name="Maven: io.netty:netty-all:4.0.30.Final" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-databind:2.6.1" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-annotations:2.6.0" level="project" />
     <orderEntry type="library" name="Maven: com.fasterxml.jackson.core:jackson-core:2.6.1" level="project" />
@@ -59,6 +58,7 @@
     <orderEntry type="library" name="Maven: org.apache.zookeeper:zookeeper:3.4.6" level="project" />
     <orderEntry type="library" name="Maven: jline:jline:0.9.94" level="project" />
     <orderEntry type="library" name="Maven: io.netty:netty:3.7.0.Final" level="project" />
+    <orderEntry type="library" name="Maven: io.netty:netty-all:4.1.13.Final" level="project" />
     <orderEntry type="library" name="Maven: com.alibaba:druid:1.0.11" level="project" />
     <orderEntry type="module-library">
       <library name="Maven: com.alibaba:jconsole:1.8.0">

@@ -2,87 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5f1ba8-1088-4c48-a231-53e164ff47bb" name="Default" comment="modify email">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/target/classes/EsUtilsTest.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/target/classes/Tests.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_jetbrains_annotations_java5_15_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/src/main/java/Tests.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/src/main/resources/logback.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_entity/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_entity/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_entity/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/MANIFEST.MF" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/classes/task/ScheduledTask.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/classes/test/TestSchedule.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/classes/test/TestThrowNull.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/classes/test/service/HttpTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/classes/test/service/NullTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/mf_test_schedule_job-1.4.0.RELEASE.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/classes/ServiceMain.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/classes/application.yml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_service/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/Tests.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/EsUtilsTest.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/Tests.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/ThreadUtils.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/Threads.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/log4j.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/maven-archiver/pom.properties" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/mf_test_utils/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/mf_parent_jar.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/mf_parent_jar.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_1_13_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/src/main/java/ESHighlightUtils.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_all_4_0_30_Final.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/EsUtilsTest.class" afterPath="$PROJECT_DIR$/utils/target/classes/EsUtilsTest.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_crawling/src/main/java/Utils/WeiboClient.java" afterPath="$PROJECT_DIR$/weibo_crawling/src/main/java/Utils/WeiboClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" afterPath="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" afterPath="$PROJECT_DIR$/weibo_crawling/weibo_crawling.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_entity/mf_test_entity.iml" afterPath="$PROJECT_DIR$/entity/entity.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_entity/pom.xml" afterPath="$PROJECT_DIR$/entity/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_entity/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/entity/target/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_entity/target/test_entity-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/entity/target/test_entity-1.0-SNAPSHOT.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/mf_test_schedule_job.iml" afterPath="$PROJECT_DIR$/schedule/schedule.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/pom.xml" afterPath="$PROJECT_DIR$/schedule/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/src/main/java/test/TestSchedule.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/test/TestSchedule.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/src/main/java/test/TestThrowNull.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/test/TestThrowNull.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/src/main/java/test/service/HttpTest.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/test/service/HttpTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/src/main/java/test/service/NullTest.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/test/service/NullTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/src/main/java/test/task/ScheduledTask.java" afterPath="$PROJECT_DIR$/schedule/src/main/java/test/task/ScheduledTask.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterPath="$PROJECT_DIR$/schedule/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_schedule_job/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterPath="$PROJECT_DIR$/schedule/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/mf_test_service.iml" afterPath="$PROJECT_DIR$/service/mf_test_service.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/pom.xml" afterPath="$PROJECT_DIR$/service/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/src/main/java/ServiceMain.java" afterPath="$PROJECT_DIR$/service/src/main/java/ServiceMain.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/src/main/resources/application.yml" afterPath="$PROJECT_DIR$/service/src/main/resources/application.yml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/src/main/resources/packt-books.sql" afterPath="$PROJECT_DIR$/service/src/main/resources/packt-books.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/service/target/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/target/test_service-1.4.0.RELEASE.jar" afterPath="$PROJECT_DIR$/service/target/test_service-1.4.0.RELEASE.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_service/test_service.iml" afterPath="$PROJECT_DIR$/service/service.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/mf_test_utils.iml" afterPath="$PROJECT_DIR$/utils/mf_test_utils.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/pom.xml" afterPath="$PROJECT_DIR$/utils/pom.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/DataSourceUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/DataSourceUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/EsUtilsTest.java" afterPath="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/LogInfo.java" afterPath="$PROJECT_DIR$/utils/src/main/java/LogInfo.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/LogUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/LogUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/ReportLogUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/ReportLogUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/ThreadUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/ThreadUtils.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/java/Threads.java" afterPath="$PROJECT_DIR$/utils/src/main/java/Threads.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/resources/log4j.xml" afterPath="$PROJECT_DIR$/utils/target/classes/log4j.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/main/resources/log4j2.properties" afterPath="$PROJECT_DIR$/utils/src/main/resources/log4j2.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/src/test/java/TestException.java" afterPath="$PROJECT_DIR$/utils/src/test/java/TestException.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/MANIFEST.MF" afterPath="$PROJECT_DIR$/utils/target/MANIFEST.MF" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/DataSourceUtils.class" afterPath="$PROJECT_DIR$/utils/target/classes/DataSourceUtils.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/LogInfo.class" afterPath="$PROJECT_DIR$/utils/target/classes/LogInfo.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/LogUtils.class" afterPath="$PROJECT_DIR$/utils/target/classes/LogUtils.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/ReportLogUtils.class" afterPath="$PROJECT_DIR$/utils/target/classes/ReportLogUtils.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/classes/log4j2.properties" afterPath="$PROJECT_DIR$/utils/target/classes/log4j2.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/test-classes/TestException.class" afterPath="$PROJECT_DIR$/utils/target/test-classes/TestException.class" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/target/test_utils-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/utils/target/test_utils-1.0-SNAPSHOT.jar" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/mf_test_utils/test_utils.iml" afterPath="$PROJECT_DIR$/utils/utils.iml" />
     </list>
     <ignored path="shengbin.wang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -128,48 +54,33 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="EsUtilsTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="EsUtilsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="154" column="28" lean-forward="false" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="28" />
+            <state relative-caret-position="108">
+              <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ESHighlightUtils.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/ESHighlightUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="docComment;method#getClient#0;class#EsUtilsTest#0" expanded="false" />
-                <element signature="docComment;method#clientSettings#0;class#EsUtilsTest#0" expanded="false" />
-                <element signature="method#conditionQuery#0;class#EsUtilsTest#0" expanded="false" />
-                <element signature="docComment;method#rangeQuery#0;class#EsUtilsTest#0" expanded="false" />
-                <element signature="method#rangeQuery#0;class#EsUtilsTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QueryBuilder.java" pinned="false" current-in-tab="false">
-        <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/index/query/QueryBuilder.java">
+      <file leaf-file-name="Tests.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/utils/src/main/java/Tests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="25" column="27" lean-forward="true" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mf_test_utils.iml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/mf_test_utils.iml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1196">
-              <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+            <state relative-caret-position="322">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -190,6 +101,9 @@
       <find>title</find>
       <find>doc</find>
       <find>elasticsearch</find>
+      <find>type</find>
+      <find>highlighterType</find>
+      <find>red</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -259,6 +173,7 @@
         <option value="$PROJECT_DIR$/utils/src/main/java/Tests.java" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
         <option value="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/ESHighlightUtils.java" />
       </list>
     </option>
   </component>
@@ -288,9 +203,8 @@
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
     <option name="y" value="1" />
-    <option name="width" value="1364" />
+    <option name="width" value="1366" />
     <option name="height" value="725" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
@@ -330,7 +244,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -363,13 +277,21 @@
               <item name="utils" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="mf_parent" type="b2602c69:ProjectViewProjectNode" />
+              <item name="mygitHub" type="462c0819:PsiDirectoryNode" />
+              <item name="utils" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -385,7 +307,7 @@
     <property name="recentsLimit" value="5" />
     <property name="dynamic.classpath" value="false" />
     <property name="FullScreen" value="false" />
-    <property name="project.structure.last.edited" value="SDKs" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.28193325" />
     <property name="options.lastSelected" value="preferences.pluginManager" />
@@ -441,7 +363,21 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.EsUtilsTest.testGet">
+  <component name="RunManager" selected="Application.ESHighlightUtils">
+    <configuration name="ESHighlightUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" value="ESHighlightUtils" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="utils" />
+      <envs />
+    </configuration>
     <configuration name="EsUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="EsUtilsTest" />
@@ -484,26 +420,6 @@
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EsUtilsTest" />
       <option name="METHOD_NAME" value="testGet" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-    </configuration>
-    <configuration name="EsUtilsTest.testPluginInstalled" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="test_utils" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EsUtilsTest" />
-      <option name="METHOD_NAME" value="testPluginInstalled" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -833,18 +749,18 @@
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.TestSchedule" />
       <item index="1" class="java.lang.String" itemvalue="Application.EsUtilsTest" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testPluginInstalled" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testBulkRequestBuilder" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
-      <item index="5" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testGet" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testBulkRequestBuilder" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testGet" />
+      <item index="5" class="java.lang.String" itemvalue="Application.ESHighlightUtils" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testGet" />
+        <item index="0" class="java.lang.String" itemvalue="Application.ESHighlightUtils" />
         <item index="1" class="java.lang.String" itemvalue="Application.EsUtilsTest" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testBulkRequestBuilder" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testPluginInstalled" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testGet" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EsUtilsTest.testBulkRequestBuilder" />
       </list>
     </recent_temporary>
   </component>
@@ -959,46 +875,65 @@
     <option name="totallyTimeSpent" value="55753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="725" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280507" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7324633" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489264" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43464053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71941274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7862969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7321712" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34871408" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.75911254" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5007924" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7828843" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2154908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22163388" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8238173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.59587955" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53181076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7324633" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489264" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8238173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6884176" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65905386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5008157" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.43464053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71941274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38662317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7862969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2154908" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1116,44 +1051,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mf_test_service/src/test/groovy/com/test/bookpub/SpockBookRepositorySpecification.groovy.bak" />
-    <entry file="file://$PROJECT_DIR$/mf_test_service/src/test/groovy/com/test/bookpub/SpockBookRepositorySpecification.groovy" />
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="22" column="21" lean-forward="false" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/resources/packt-books.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/src/main/java/ServiceMain.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="7" lean-forward="false" selection-start-line="12" selection-start-column="7" selection-end-line="12" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/service/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="40" column="49" lean-forward="false" selection-start-line="40" selection-start-column="49" selection-end-line="40" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/ReportLogUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/LogInfo.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="184">
@@ -1253,7 +1150,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="75" column="3" lean-forward="true" selection-start-line="75" selection-start-column="3" selection-end-line="75" selection-end-column="3" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1282,13 +1178,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="92">
           <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="17" column="39" lean-forward="false" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -1393,7 +1282,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1419,9 +1307,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-8924">
           <caret line="82" column="16" lean-forward="false" selection-start-line="82" selection-start-column="16" selection-end-line="82" selection-end-column="16" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1429,7 +1314,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1725">
           <caret line="36" column="13" lean-forward="false" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1449,17 +1333,79 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="322">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/fetch/subphase/highlight/HighlightBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2330">
+          <caret line="346" column="83" lean-forward="false" selection-start-line="346" selection-start-column="68" selection-end-line="346" selection-end-column="83" />
+          <folding>
+            <element signature="e#5368#5369#0" expanded="false" />
+            <element signature="e#5410#5411#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/common/xcontent/ToXContent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="253">
+          <caret line="31" column="17" lean-forward="false" selection-start-line="31" selection-start-column="17" selection-end-line="31" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/action/support/ToXContentToBytes.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="33" column="56" lean-forward="false" selection-start-line="33" selection-start-column="56" selection-end-line="33" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/List.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/index/query/QueryBuilders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="201">
+          <caret line="87" column="42" lean-forward="false" selection-start-line="87" selection-start-column="42" selection-end-line="87" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/fetch/subphase/highlight/AbstractHighlighterBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-244">
+          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="154" column="28" lean-forward="false" selection-start-line="154" selection-start-column="16" selection-end-line="154" selection-end-column="28" />
+        <state relative-caret-position="108">
+          <caret line="49" column="38" lean-forward="false" selection-start-line="49" selection-start-column="38" selection-end-line="49" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/ESHighlightUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="78" column="31" lean-forward="false" selection-start-line="78" selection-start-column="31" selection-end-line="78" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="docComment;method#getClient#0;class#EsUtilsTest#0" expanded="false" />
-            <element signature="docComment;method#clientSettings#0;class#EsUtilsTest#0" expanded="false" />
-            <element signature="method#conditionQuery#0;class#EsUtilsTest#0" expanded="false" />
-            <element signature="docComment;method#rangeQuery#0;class#EsUtilsTest#0" expanded="false" />
-            <element signature="method#rangeQuery#0;class#EsUtilsTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1518,7 +1464,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>checkStyle</last-edited>
+          <last-edited>utils</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -1556,6 +1502,8 @@
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="$PROJECT_DIR$" />
+    <option value="clean" />
+    <option value="clean compile install package -DeskipTests" />
     <option value="clean compile install package -DeskipTests" />
   </component>
 </project>
