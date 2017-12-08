@@ -47,8 +47,10 @@ public class EsUtilsTest {
 
     public static void main(String[] args) {
         //9300端口是tcp 1507787100000L + 1000 * 60 * 60*2
-        long startTime = 1510277400000L;
-        long endTime = 1511539200000L;
+//        long startTime = 1510277400000L;
+//        long endTime = 1511539200000L;
+        long startTime = 1512345600000L;
+        long endTime = 1512403199000L;
         client = getClient();
         while (startTime <= endTime) {
             long t1 = startTime;
@@ -73,7 +75,7 @@ public class EsUtilsTest {
                 long start = System.currentTimeMillis();
                 for (SearchHit hit : response.getHits().getHits()) {
                     Map<String, Object> sourceAsMap = hit.getSourceAsMap();
-                    bulkRequest.add(client.prepareIndex("bfd_mf_v1", "doc", hit.getId())
+                    bulkRequest.add(client.prepareIndex("mf_index_2017-12-04", "docs", hit.getId())
                             .setSource(sourceAsMap));
                     BulkResponse bulkItemResponses = bulkRequest.get();
                     if (bulkItemResponses.hasFailures()) {
@@ -93,7 +95,7 @@ public class EsUtilsTest {
      * @return SearchRequestBuilder
      */
     private static SearchRequestBuilder getSearchRequestBuilder() {
-        return client.prepareSearch("bfd_mf")
+        return client.prepareSearch("test_split_index")
                 .setTypes("logs");
     }
 

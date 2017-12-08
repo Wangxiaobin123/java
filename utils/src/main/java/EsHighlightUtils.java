@@ -3,12 +3,14 @@ import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.common.settings.Settings;
 import org.elasticsearch.common.transport.TransportAddress;
+import org.elasticsearch.common.unit.TimeValue;
 import org.elasticsearch.index.query.MatchPhraseQueryBuilder;
 import org.elasticsearch.index.query.QueryBuilders;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
+import org.elasticsearch.search.slice.SliceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.slf4j.Logger;
@@ -44,7 +46,7 @@ import java.util.Map;
  *
  * @author LubinKivi
  */
-public class ESHighlightUtils {
+public class EsHighlightUtils {
     private static final Logger logger = LoggerFactory.getLogger(EsUtilsTest.class);
 
     public static void main(String[] args) {
@@ -69,12 +71,15 @@ public class ESHighlightUtils {
                             InetAddress.getByName(hostName), port));
             SearchRequestBuilder searchRequestBuilder = client.prepareSearch("bfd_mf_v1")
                     .setTypes("doc");
+            SliceBuilder sliceBuilder = new SliceBuilder("pubTime",0,10);
             SearchResponse searchResponse = searchRequestBuilder
                     .setQuery(QueryBuilders.boolQuery().
                             filter(QueryBuilders.matchPhraseQuery("title", "大数据")).
                             filter(QueryBuilders.matchPhraseQuery("content", "大数据")))
                     .setSize(3)
                     .addSort("docId", SortOrder.ASC)
+                    .setScroll(TimeValue.timeValueMinutes(5))
+                    .slice(sliceBuilder)
                     .setFetchSource(include, null)
                     .highlighter(highlightBuilder)
                     .get();
