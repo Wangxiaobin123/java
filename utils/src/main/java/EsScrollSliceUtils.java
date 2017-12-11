@@ -58,7 +58,7 @@ public class EsScrollSliceUtils {
                     .to(1512403199000L, true);
             long sum = 0;
             long beginTime = System.currentTimeMillis();
-            Integer max = 3;
+            Integer max = 2;
             // 循环
             for (int i = 0; i < max; i++) {
                 // slice
