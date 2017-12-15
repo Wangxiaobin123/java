@@ -22,6 +22,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.net.InetAddress;
+import java.util.Calendar;
 import java.util.Map;
 
 /**
@@ -53,6 +54,7 @@ public class EsAggUtils {
             SearchRequestBuilder searchRequestBuilder = client
                     .prepareSearch("mf_index_2017-12-03", "mf_index_2017-12-04")
                     .setTypes("docs");
+
             for (int i = 0; i < 3; i++) {
                 SliceBuilder sliceBuilder = new SliceBuilder(i, 3);
                 SearchResponse searchResponse = searchRequestBuilder
@@ -62,12 +64,15 @@ public class EsAggUtils {
                         .slice(sliceBuilder)
                         .addAggregation(
                                 //AggregationBuilders.terms("by_docType"+i).field("url")
-                                AggregationBuilders
-                                        .dateHistogram("by_pubTime")
+                                AggregationBuilders.histogram("by_pubTime")
+                                        .interval(1000*60*60*24)
+                                        //.timeZone(DateTimeZone.forID("+08:00"))
+//                                AggregationBuilders
+//                                        .dateHistogram("by_pubTime")
                                         .field("pubTime")
-                                        .dateHistogramInterval(DateHistogramInterval.DAY)
+                                        //.dateHistogramInterval(DateHistogramInterval.DAY)
                                         .minDocCount(0L)
-                                        .timeZone(DateTimeZone.forID("+08:00"))
+                                        //.timeZone(DateTimeZone.forID("+08:00"))
                         )
                         .get();
                 Terms terms = searchResponse.getAggregations().get("by_pubTime" + i);

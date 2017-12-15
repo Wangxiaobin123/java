@@ -2,10 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cd5f1ba8-1088-4c48-a231-53e164ff47bb" name="Default" comment="modify email">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/1m.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/20s.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/30s.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/4m.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/5m.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/utils/6m.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/EsAggUtils.class" afterPath="$PROJECT_DIR$/utils/target/classes/EsAggUtils.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/EsScrollSliceUtils.class" afterPath="$PROJECT_DIR$/utils/target/classes/EsScrollSliceUtils.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/EsUtilsTest.class" afterPath="$PROJECT_DIR$/utils/target/classes/EsUtilsTest.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/target/classes/Tests.class" afterPath="$PROJECT_DIR$/utils/target/classes/Tests.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java" afterPath="$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" afterPath="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/utils/src/main/java/Tests.java" afterPath="$PROJECT_DIR$/utils/src/main/java/Tests.java" />
     </list>
     <ignored path="shengbin.wang.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -54,44 +65,23 @@
       <file leaf-file-name="EsUtilsTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="52" column="38" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="52" selection-end-column="38" />
+            <state relative-caret-position="1633">
+              <caret line="105" column="10" lean-forward="false" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EsScrollSliceUtils.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="EsScrollSliceUtils.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1380">
-              <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
+            <state relative-caret-position="103">
+              <caret line="177" column="28" lean-forward="false" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EsHighlightUtils.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsHighlightUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1702">
-              <caret line="95" column="5" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EsAggUtils.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
-              <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="method#test2#0;class#EsScrollSliceUtils#0" expanded="false" />
+                <element signature="e#7929#7937#0" expanded="true" />
+                <element signature="e#8013#8021#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -115,6 +105,10 @@
       <find>type</find>
       <find>highlighterType</find>
       <find>red</find>
+      <find>his</find>
+      <find>长安汽车明星车型销量下滑</find>
+      <find>结果为:</find>
+      <find>第</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -181,13 +175,13 @@
         <option value="$PROJECT_DIR$/mf_test_utils/src/main/java/EsUtilsTest.java" />
         <option value="$PROJECT_DIR$/mf_test_utils/src/main/java/Tests.java" />
         <option value="$PROJECT_DIR$/weibo_crawling/src/main/java/Utils/WeiboClient.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/Tests.java" />
         <option value="$PROJECT_DIR$/utils/pom.xml" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/ESscrollSliceUtils.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/ESHighlightUtils.java" />
-        <option value="$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java" />
         <option value="$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/Tests.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java" />
+        <option value="$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java" />
       </list>
     </option>
   </component>
@@ -216,7 +210,7 @@
   <component name="MavenRunner">
     <option name="vmOptions" value="-Dmaven.multiModuleProjectDirectory=$M2_HOME" />
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds">
     <option name="y" value="1" />
     <option name="width" value="1366" />
     <option name="height" value="725" />
@@ -258,9 +252,10 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -306,7 +301,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,28 +335,29 @@
     <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="SearchEverywhereHistoryKey" value="nettyu&#9;FILE&#9;jar://D:/repository/org/elasticsearch/plugin/transport-netty4-client/6.0.0/transport-netty4-client-6.0.0-sources.jar!/org/elasticsearch/transport/netty4/Netty4Utils.java" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\mygitHub\mf_test_utils\src\main\resources" />
-      <recent name="D:\mygitHub\mf_test_utils\src\main\java" />
-      <recent name="D:\mygitHub\mf_test_service\src\test\groovy\com\test" />
-      <recent name="D:\mygitHub\mf_test_service\src\test\groovy\com" />
-      <recent name="D:\mygitHub\mf_test_service\src\test\groovy" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="groovy.util.GroovyTestCase" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\mygitHub\utils" />
       <recent name="D:\mygitHub\utils\src\main\resources" />
       <recent name="D:\mygitHub\mf_test_utils\src\main\resources" />
       <recent name="D:\shengbin.wang\mf_test_service_test\src\main\resources" />
       <recent name="D:\shengbin.wang\mf_test\src\main\java\test" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="groovy.util.GroovyTestCase" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\mygitHub\utils" />
+      <recent name="D:\mygitHub\mf_test_utils\src\main\resources" />
+      <recent name="D:\mygitHub\mf_test_utils\src\main\java" />
+      <recent name="D:\mygitHub\mf_test_service\src\test\groovy\com\test" />
+      <recent name="D:\mygitHub\mf_test_service\src\test\groovy\com" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -377,21 +372,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.EsAggUtils">
-    <configuration name="ESHighlightUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="ESHighlightUtils" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="utils" />
-      <envs />
-    </configuration>
+  <component name="RunManager" selected="JUnit.EsScrollSliceUtils.test3">
     <configuration name="EsAggUtils" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="EsAggUtils" />
@@ -420,14 +401,14 @@
       <module name="utils" />
       <envs />
     </configuration>
-    <configuration name="EsScrollSliceUtils.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="EsScrollSliceUtils.test3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="utils" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EsScrollSliceUtils" />
-      <option name="METHOD_NAME" value="test2" />
+      <option name="METHOD_NAME" value="test3" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -439,20 +420,6 @@
       </option>
       <envs />
       <patterns />
-    </configuration>
-    <configuration name="EsUtilsTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="EsUtilsTest" />
-      <option name="VM_PARAMETERS" value="" />
-      <option name="PROGRAM_PARAMETERS" value="" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="1.8" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="utils" />
-      <envs />
     </configuration>
     <configuration name="TestSchedule" type="Application" factoryName="Application" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
@@ -480,6 +447,46 @@
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Debug" />
       <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration name="Tests.test1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="utils" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="test1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+    </configuration>
+    <configuration name="Tests.test2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="utils" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="Tests" />
+      <option name="METHOD_NAME" value="test2" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
     </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <module />
@@ -750,19 +757,19 @@
     </configuration>
     <list size="6">
       <item index="0" class="java.lang.String" itemvalue="Application.TestSchedule" />
-      <item index="1" class="java.lang.String" itemvalue="Application.EsUtilsTest" />
-      <item index="2" class="java.lang.String" itemvalue="Application.ESHighlightUtils" />
-      <item index="3" class="java.lang.String" itemvalue="Application.EsScrollSliceUtils" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.EsScrollSliceUtils.test2" />
-      <item index="5" class="java.lang.String" itemvalue="Application.EsAggUtils" />
+      <item index="1" class="java.lang.String" itemvalue="Application.EsScrollSliceUtils" />
+      <item index="2" class="java.lang.String" itemvalue="Application.EsAggUtils" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.Tests.test2" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
+      <item index="5" class="java.lang.String" itemvalue="JUnit.EsScrollSliceUtils.test3" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Application.EsAggUtils" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EsScrollSliceUtils.test3" />
         <item index="1" class="java.lang.String" itemvalue="Application.EsScrollSliceUtils" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EsScrollSliceUtils.test2" />
-        <item index="3" class="java.lang.String" itemvalue="Application.EsUtilsTest" />
-        <item index="4" class="java.lang.String" itemvalue="Application.ESHighlightUtils" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.Tests.test2" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.Tests.test1" />
+        <item index="4" class="java.lang.String" itemvalue="Application.EsAggUtils" />
       </list>
     </recent_temporary>
   </component>
@@ -842,80 +849,80 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 11m 15s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 04m 18s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 12m 55s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 06m 04s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 13m 05s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 12m 20s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 13m 15s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 16m 37s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 13m 25s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 18m 23s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 15m 51s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 18m 47s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 16m 30s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 20m 20s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.07 at 23h 55m 40s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 21m 20s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.08 at 00h 12m 30s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 22m 53s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="EsScrollSliceUtils_test2 - 2017.12.08 at 00h 13m 25s.xml">
-      <configuration name="EsScrollSliceUtils.test2" configurationId="JUnit" />
+    <history-entry file="EsScrollSliceUtils_test3 - 2017.12.15 at 13h 25m 06s.xml">
+      <configuration name="EsScrollSliceUtils.test3" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="55753000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1366" height="725" extended-state="1" />
+    <frame x="0" y="1" width="1366" height="725" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32843137" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7324633" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3489264" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71941274" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.43464053" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7862969" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.7324633" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34839204" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.71895427" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8594771" sideWeight="0.50653595" order="5" side_tool="false" content_ui="tabs" x="-46" y="-7" width="452" height="691" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.78594774" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22205207" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17228177" sideWeight="0.49346405" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.8238173" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53181076" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5415987" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.53181076" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962178" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6884176" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65905386" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6884176" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="REST Client" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.65905386" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5008157" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38662317" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38662317" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.49918434" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
+      <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32952693" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -984,12 +991,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java</url>
-          <line>64</line>
+          <line>84</line>
           <properties />
-          <option name="timeStamp" value="20" />
+          <option name="timeStamp" value="22" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="21" />
+      <option name="time" value="26" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -998,38 +1005,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/mf_test_utils/src/main/resources/logback.xml" />
-    <entry file="file://$PROJECT_DIR$/mf_test_utils/src/main/resources/log4j2.xml" />
-    <entry file="file://$PROJECT_DIR$/utils/src/main/resources/log4j.xml" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/plugin/transport-netty4-client/6.0.0/transport-netty4-client-6.0.0.jar!/org/elasticsearch/transport/Netty4Plugin.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="29" column="13" lean-forward="false" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mf_test_utils/src/main/resources/log4j.properties" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0.jar!/org/elasticsearch/action/search/SearchRequestBuilder.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="123" column="32" lean-forward="false" selection-start-line="123" selection-start-column="32" selection-end-line="123" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/client/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="156" column="25" lean-forward="false" selection-start-line="156" selection-start-column="25" selection-end-line="156" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/action/update/UpdateRequestBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="210" column="32" lean-forward="false" selection-start-line="210" selection-start-column="32" selection-end-line="210" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/action/update/UpdateRequest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -1164,14 +1139,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1196">
-          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/Program Files/Java/jdk1.8.0_151/src.zip!/java/util/concurrent/ThreadPoolExecutor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="111">
@@ -1200,14 +1167,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/Tests.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/fetch/subphase/highlight/HighlightBuilder.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2330">
@@ -1233,7 +1192,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="201">
           <caret line="237" column="12" lean-forward="false" selection-start-line="237" selection-start-column="12" selection-end-line="237" selection-end-column="12" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1283,7 +1241,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="76">
           <caret line="50" column="0" lean-forward="false" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1301,34 +1258,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1380">
-          <caret line="60" column="27" lean-forward="false" selection-start-line="60" selection-start-column="27" selection-end-line="60" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsHighlightUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1702">
-          <caret line="95" column="5" lean-forward="false" selection-start-line="49" selection-start-column="4" selection-end-line="95" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="52" column="38" lean-forward="false" selection-start-line="51" selection-start-column="8" selection-end-line="52" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/aggregations/bucket/histogram/DateHistogramInterval.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="106">
@@ -1336,12 +1265,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/utils/1m.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/4m.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/30s.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/20s.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/6m.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="0" column="1463" lean-forward="false" selection-start-line="0" selection-start-column="1463" selection-end-line="0" selection-end-column="1463" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/5m.txt">
+      <provider selected="true" editor-type-id="LargeFileEditor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/Tests.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="355">
+          <caret line="39" column="70" lean-forward="false" selection-start-line="39" selection-start-column="70" selection-end-line="39" selection-end-column="70" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsAggUtils.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="65" column="45" lean-forward="false" selection-start-line="65" selection-start-column="45" selection-end-line="65" selection-end-column="45" />
+        <state relative-caret-position="171">
+          <caret line="35" column="35" lean-forward="false" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="52" column="31" lean-forward="false" selection-start-line="52" selection-start-column="31" selection-end-line="52" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/aggregations/AggregationBuilders.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="232" column="27" lean-forward="false" selection-start-line="232" selection-start-column="27" selection-end-line="232" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/elasticsearch/elasticsearch/6.0.0/elasticsearch-6.0.0-sources.jar!/org/elasticsearch/search/aggregations/bucket/histogram/HistogramAggregationBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="87" column="22" lean-forward="false" selection-start-line="87" selection-start-column="22" selection-end-line="87" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsHighlightUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="54" column="41" lean-forward="false" selection-start-line="54" selection-start-column="41" selection-end-line="54" selection-end-column="41" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsUtilsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1633">
+          <caret line="105" column="10" lean-forward="false" selection-start-line="105" selection-start-column="10" selection-end-line="105" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utils/src/main/java/EsScrollSliceUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="177" column="28" lean-forward="false" selection-start-line="177" selection-start-column="28" selection-end-line="177" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#test2#0;class#EsScrollSliceUtils#0" expanded="false" />
+            <element signature="e#7929#7937#0" expanded="true" />
+            <element signature="e#8013#8021#0" expanded="true" />
           </folding>
         </state>
       </provider>

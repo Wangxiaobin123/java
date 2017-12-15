@@ -103,7 +103,7 @@ public class EsUtilsTest {
      * @return Transport client
      */
     @org.jetbrains.annotations.Nullable
-    private static TransportClient getClient() {
+    public static TransportClient getClient() {
         try {
             return new PreBuiltTransportClient(clientSettings()).
                     addTransportAddress(new TransportAddress(
