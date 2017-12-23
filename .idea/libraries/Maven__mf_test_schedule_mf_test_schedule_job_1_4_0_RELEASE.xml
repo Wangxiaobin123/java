@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: mf_test_schedule:mf_test_schedule_job:1.4.0.RELEASE">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/mf_test_schedule/mf_test_schedule_job/1.4.0.RELEASE/mf_test_schedule_job-1.4.0.RELEASE.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/mf_test_schedule/mf_test_schedule_job/1.4.0.RELEASE/mf_test_schedule_job-1.4.0.RELEASE-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/mf_test_schedule/mf_test_schedule_job/1.4.0.RELEASE/mf_test_schedule_job-1.4.0.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>mf_test_schedule_job</module>
-        <module>mf_test_entity</module>
-        <module>mf_test_utils</module>
-        <module>mf_test_service</module>
+        <module>schedule</module>
+        <module>utils</module>
+        <module>service</module>
         <module>weibo_crawling</module>
     </modules>
     <dependencies>

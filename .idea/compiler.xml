@@ -21,20 +21,28 @@
         <module name="mf_test_entity" />
         <module name="mf_test_schedule_job" />
         <module name="mf_test_wsb" />
+        <module name="schedule" />
+        <module name="service" />
         <module name="test_service" />
         <module name="test_utils" />
         <module name="untitled" />
+        <module name="utils" />
         <module name="weibo_crawling" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="entity" target="1.6" />
+      <module name="entitys" target="1.5" />
       <module name="mf_parent" target="1.5" />
       <module name="mf_test" target="1.6" />
       <module name="mf_test_entity" target="1.5" />
       <module name="mf_test_schedule_job" target="1.6" />
       <module name="mf_test_service" target="1.6" />
+      <module name="schedule" target="1.6" />
+      <module name="service" target="1.6" />
       <module name="test_service" target="1.6" />
       <module name="test_utils" target="1.6" />
+      <module name="utils" target="1.8" />
       <module name="weibo_crawling" target="1.5" />
     </bytecodeTargetLevel>
   </component>

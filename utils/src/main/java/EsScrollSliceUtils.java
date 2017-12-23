@@ -10,6 +10,8 @@ import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.elasticsearch.search.Scroll;
 import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.SearchHits;
+import org.elasticsearch.search.aggregations.AggregationBuilders;
+import org.elasticsearch.search.aggregations.bucket.terms.Terms;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.elasticsearch.search.slice.DocValuesSliceQuery;
@@ -34,8 +36,8 @@ public class EsScrollSliceUtils {
     public static void main(String[] args) {
         String[] include = {"title", "docType", "content"};
         // String[] exclude = {"url"};
-        String hostName = "172.24.5.132";
-        Integer port = 9305;
+        String hostName = "172.24.5.131";
+        Integer port = 9309;
         try {
             // 高亮
             HighlightBuilder highlightBuilder = new HighlightBuilder()
@@ -145,10 +147,10 @@ public class EsScrollSliceUtils {
      */
     @Test
     public void test3() {
-        String[] include = {"title", "docType"};
+        String[] include = {"title", "docType", "source"};
         String[] exclude = {"content"};
-        String hostName = "172.24.5.132";
-        Integer port = 9305;
+        String hostName = "172.24.5.131";
+        Integer port = 9309;
         try {
             // 高亮
             HighlightBuilder highlightBuilder = new HighlightBuilder()
@@ -165,16 +167,23 @@ public class EsScrollSliceUtils {
             TransportClient client = new PreBuiltTransportClient(settings).
                     addTransportAddress(new TransportAddress(
                             InetAddress.getByName(hostName), port));
-            String[] indexList = new String[]{"mf_index_2017-12-03", "mf_index_2017-12-04"};
+            String[] indexList = new String[]{"mf_index_2017-12-14"};
             SearchRequestBuilder searchRequestBuilder = client
                     .prepareSearch(indexList)
                     .setTypes("docs");
             // timeRange
             RangeQueryBuilder rangeQueryBuilder = QueryBuilders.rangeQuery("pubTime")
-                    .from(1512252000000L, true)
-                    .to(1512252600000L, true);
+                    .from(1502252000000L, true)
+                    .to(1522252600000L, true);
             long sum = 0;
             long beginTime = System.currentTimeMillis();
+            SearchRequestBuilder searchRequestBuilder1 = searchRequestBuilder.setQuery(QueryBuilders.boolQuery().
+                    must(rangeQueryBuilder).
+                    filter(QueryBuilders.matchAllQuery()))
+                    .setSize(10000)
+                    .addSort("docId", SortOrder.ASC)
+                    .setScroll(TimeValue.timeValueMinutes(8))
+                    .setFetchSource(include, exclude);
             Integer max = 3;
             // 存放title
             List<String> titleList = new ArrayList<String>();
@@ -185,29 +194,17 @@ public class EsScrollSliceUtils {
                 logger.info("\n------->第" + (i + 1) + "次slice开始<--------");
                 // slice
                 SliceBuilder sliceBuilder = new SliceBuilder("pubTime", i, max);
-                SearchResponse searchResponse = searchRequestBuilder
-                        .setQuery(QueryBuilders.boolQuery().
-                                must(rangeQueryBuilder).
-                                filter(QueryBuilders.matchAllQuery()))
-                        .setSize(30)
-                        .addSort("docId", SortOrder.ASC)
-                        .setScroll(TimeValue.timeValueMinutes(8))
-                        .setFetchSource(include, exclude)
+                SearchResponse searchResponse = searchRequestBuilder1
                         .slice(sliceBuilder)
                         .highlighter(highlightBuilder)
                         .get();
                 String scrollId = searchResponse.getScrollId();
-                Long sliceTotal = 0L;
                 int totalResults = searchResponse.getHits().getHits().length;
                 // 切片总量
                 long numSliceResults = searchResponse.getHits().totalHits;
                 logger.info("\n【first totalResults ,numSliceResults is :{},{}】", totalResults, numSliceResults);
-                for (SearchHit hit : searchResponse.getHits().getHits()) {
-                    keys.add(hit.getId());
-                    titleList.add((String) hit.getSourceAsMap().get("title"));
-                }
-                logger.info("\n======== 第一次,keyId is:{}\n,size is:{}=========", keys, keys.size());
-                while (searchResponse.getHits().getHits().length > 0) {
+
+                while ( searchResponse.getHits().getHits().length> 0) {
                     searchResponse = client.prepareSearchScroll(scrollId)
                             .setScrollId(scrollId)
                             .setScroll(new Scroll(TimeValue.timeValueMinutes(8)))
@@ -216,11 +213,6 @@ public class EsScrollSliceUtils {
                     totalResults += searchResponse.getHits().getHits().length;
                     logger.info("\n【while totalResults ,numSliceResults is :{},{}】", totalResults, numSliceResults);
 
-                    for (SearchHit hit : searchResponse.getHits().getHits()) {
-                        keys.add(hit.getId());
-                        titleList.add((String) hit.getSourceAsMap().get("title"));
-                    }
-                    logger.info("\n========第二次,keyId is:{}\n,size is:{}=========", keys, keys.size());
                 }
                 logger.info("\n------->第" + (i + 1) + "次slice结束<--------切片结果为总数为：{}", titleList.size());
                 logger.info("第" + (i + 1) + "次总数：{}", searchResponse.getHits().totalHits);

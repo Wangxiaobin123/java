@@ -137,7 +137,7 @@ public class EsUtilsTest {
 
     /**
      * @param startTime startTime
-     * @param endTime
+     * @param endTime   endTime
      * @return 时间查询 query
      */
     private static RangeQueryBuilder rangeQuery(long startTime, long endTime) {
@@ -149,17 +149,18 @@ public class EsUtilsTest {
     /**
      * 测试得到指定字段的数据
      */
-   @Test
-   public void testGet(){
-       client = getClient();
-       SearchRequestBuilder searchRequestBuilder = getSearchRequestBuilder();
-       SearchResponse searchResponse = searchRequestBuilder.setSize(3)
-               .storedFields("docType").get();
-       logger.info("总数：{}",searchResponse.getHits().totalHits);
-       for (SearchHit hit : searchResponse.getHits().getHits()) {
-           System.out.println(hit.getSourceAsMap());
-       }
-   }
+    @Test
+    public void testGet() {
+        client = getClient();
+        SearchRequestBuilder searchRequestBuilder = getSearchRequestBuilder();
+        SearchResponse searchResponse = searchRequestBuilder.setSize(3)
+                .storedFields("docType").get();
+        logger.info("总数：{}", searchResponse.getHits().totalHits);
+        for (SearchHit hit : searchResponse.getHits().getHits()) {
+            System.out.println(hit.getSourceAsMap());
+        }
+    }
+
     @Test
     public void testBulkRequestBuilder() {
         TransportClient transportClient = getClient();

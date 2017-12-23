@@ -3,7 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/checkStyle/checkStyle.iml" filepath="$PROJECT_DIR$/checkStyle/checkStyle.iml" />
-      <module fileurl="file://$PROJECT_DIR$/entity/entity.iml" filepath="$PROJECT_DIR$/entity/entity.iml" />
+      <module fileurl="file://$PROJECT_DIR$/entity.iml" filepath="$PROJECT_DIR$/entity.iml" />
       <module fileurl="file://$PROJECT_DIR$/mf_parent.iml" filepath="$PROJECT_DIR$/mf_parent.iml" />
       <module fileurl="file://$PROJECT_DIR$/schedule/schedule.iml" filepath="$PROJECT_DIR$/schedule/schedule.iml" />
       <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
