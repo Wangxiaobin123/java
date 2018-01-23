@@ -1,9 +1,9 @@
-import org.joda.time.DateTimeZone;
 import org.junit.Test;
 
 import java.io.*;
-import java.util.ArrayList;
-import java.util.List;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -21,7 +21,7 @@ public class Tests {
             System.out.println(directory.getCanonicalPath());
             //获取绝对路径
             System.out.println(directory.getAbsolutePath());
-        }catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
         }
     }
@@ -69,4 +69,17 @@ public class Tests {
         }
     }
 
+    @Test
+    public void test5() {
+        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+        long time = 1515121500000L;
+        String d = format.format(time);
+        System.out.println(d);
+    }
+
+    @Test
+    public void test6() {
+        String d = "0.5";
+        System.out.println(Double.valueOf(d));
+    }
 }

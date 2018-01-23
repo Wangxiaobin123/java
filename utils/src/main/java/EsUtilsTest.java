@@ -3,6 +3,7 @@ import org.elasticsearch.action.bulk.BulkResponse;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 import org.elasticsearch.action.search.SearchResponse;
 import org.elasticsearch.action.search.SearchType;
+import org.elasticsearch.action.support.IndicesOptions;
 import org.elasticsearch.client.transport.TransportClient;
 import org.elasticsearch.cluster.metadata.MetaData;
 import org.elasticsearch.common.network.NetworkModule;
@@ -29,6 +30,7 @@ import java.net.InetAddress;
 import java.net.UnknownHostException;
 import java.util.Arrays;
 import java.util.Map;
+import java.util.Optional;
 
 import static junit.framework.TestCase.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -42,8 +44,8 @@ import static org.junit.Assert.fail;
 public class EsUtilsTest {
     private static final Logger logger = LoggerFactory.getLogger(EsUtilsTest.class);
     private static TransportClient client;
-    private static final String HOST_NAME = "172.24.5.132";
-    private static final Integer PORT = 9305;
+    private static final String HOST_NAME = "172.24.5.131";
+    private static final Integer PORT = 9309;
 
     public static void main(String[] args) {
         //9300端口是tcp 1507787100000L + 1000 * 60 * 60*2
@@ -95,15 +97,18 @@ public class EsUtilsTest {
      * @return SearchRequestBuilder
      */
     private static SearchRequestBuilder getSearchRequestBuilder() {
-        return client.prepareSearch("test_split_index")
-                .setTypes("logs");
+        SearchRequestBuilder searchRequestBuilder = client.prepareSearch("mf_index_2017-12-14");
+        // allowNoIndices: true,不存在的索引不会抛异常;false,抛异常
+        searchRequestBuilder.setIndicesOptions(IndicesOptions.fromOptions(true, false,
+                true, false));
+        return searchRequestBuilder;
     }
 
     /**
      * @return Transport client
      */
     @org.jetbrains.annotations.Nullable
-    public static TransportClient getClient() {
+    private static TransportClient getClient() {
         try {
             return new PreBuiltTransportClient(clientSettings()).
                     addTransportAddress(new TransportAddress(
@@ -152,13 +157,18 @@ public class EsUtilsTest {
     @Test
     public void testGet() {
         client = getClient();
+        QueryBuilder timeRangeQuery = null;
+        BoolQueryBuilder conditionQuery = QueryBuilders.boolQuery()
+                .must((QueryBuilder) Optional.empty().orElse(QueryBuilders.boolQuery()));
         SearchRequestBuilder searchRequestBuilder = getSearchRequestBuilder();
-        SearchResponse searchResponse = searchRequestBuilder.setSize(3)
-                .storedFields("docType").get();
-        logger.info("总数：{}", searchResponse.getHits().totalHits);
-        for (SearchHit hit : searchResponse.getHits().getHits()) {
-            System.out.println(hit.getSourceAsMap());
-        }
+        System.out.println(Optional.ofNullable(searchRequestBuilder).isPresent());
+
+//        SearchResponse searchResponse = searchRequestBuilder.setQuery(conditionQuery).setSize(3)
+//                .storedFields("docType").get();
+//        logger.info("总数：{}", searchResponse.getHits().totalHits);
+//        for (SearchHit hit : searchResponse.getHits().getHits()) {
+//            System.out.println(hit.getSourceAsMap());
+//        }
     }
 
     @Test
@@ -200,6 +210,12 @@ public class EsUtilsTest {
                         ex.getMessage().startsWith("plugin already exists: "));
             }
         }
+    }
+
+
+    @Test
+    public void existIndex() {
+       // boolean flag = indexExist("mf_subject12");
     }
 
 }

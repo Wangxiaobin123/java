@@ -1,7 +1,10 @@
 package jdk8;
 
+import org.elasticsearch.index.query.BoolQueryBuilder;
+import org.elasticsearch.index.query.QueryBuilders;
 import org.junit.Test;
 
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.IntSummaryStatistics;
 import java.util.List;
@@ -57,5 +60,27 @@ public class LoopUtilsTest {
         System.out.println("Lowest prime number in List : " + stats.getMin());
         System.out.println("Sum of all prime numbers : " + stats.getSum());
         System.out.println("Average of all prime numbers : " + stats.getAverage());
+    }
+    @Test
+    public void testLoop(){
+        BoolQueryBuilder b1 = new BoolQueryBuilder();
+        b1.should(QueryBuilders.matchAllQuery());
+
+        BoolQueryBuilder b2 = new BoolQueryBuilder();
+        b2.should(QueryBuilders.matchAllQuery());
+
+        List<BoolQueryBuilder> queryLists = new ArrayList<>();
+        queryLists.add(b1);
+        queryLists.add(b2);
+
+        BoolQueryBuilder result = new BoolQueryBuilder();
+        queryLists.forEach(result::should);
+
+        BoolQueryBuilder result2 = new BoolQueryBuilder();
+        for(BoolQueryBuilder b: queryLists){
+            result2.should(b);
+        }
+        System.out.println(result.equals(result2));
+        System.out.println(result2);
     }
 }

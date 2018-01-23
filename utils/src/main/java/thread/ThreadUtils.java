@@ -23,7 +23,8 @@ import java.util.List;
 public class ThreadUtils implements Runnable {
     private static final Logger logger = LoggerFactory.getLogger(ThreadUtils.class);
 
-    private int threadName;
+    private String threadName;
+    private int threadId;
     private Integer sliceMax;
     private SearchRequestBuilder searchRequestBuilder1;
     private List<String> keys;
@@ -31,9 +32,10 @@ public class ThreadUtils implements Runnable {
     private static TransportClient client;
     private Long sum = 0L;
 
-    public ThreadUtils(int i, Integer max, SearchRequestBuilder searchRequestBuilder1,
+    public ThreadUtils(String threadName, int i, Integer max, SearchRequestBuilder searchRequestBuilder1,
                        List<String> keys, List<String> titleList) {
-        this.threadName = i;
+        this.threadName = threadName;
+        this.threadId = i;
         this.sliceMax = max;
         this.searchRequestBuilder1 = searchRequestBuilder1;
         this.keys = keys;
@@ -44,7 +46,7 @@ public class ThreadUtils implements Runnable {
     @Override
     public void run() {
         // slice
-        SliceBuilder sliceBuilder = new SliceBuilder("pubTime", threadName, sliceMax);
+        SliceBuilder sliceBuilder = new SliceBuilder("pubTime", threadId, sliceMax);
         SearchResponse searchResponse = searchRequestBuilder1
                 .slice(sliceBuilder)
                 .get();
@@ -59,7 +61,7 @@ public class ThreadUtils implements Runnable {
                 titleList.add((String) hit.getSourceAsMap().get("title"));
             }
         }
-        logger.info("\n========" + Thread.currentThread().getName() + "+,keyId is:{}\n,size is:{}=========", keys, keys.size());
+        logger.info("\n========" + Thread.currentThread().getName()+threadName + "+,keyId is:{}\n,size is:{}=========", keys, keys.size());
         keys.clear();
         while (searchResponse.getHits().getHits().length >= 60) {
             searchResponse = client.prepareSearchScroll(scrollId)
@@ -77,7 +79,7 @@ public class ThreadUtils implements Runnable {
                 }
             }
             logger.info("\n========" + Thread.currentThread().getName() + ",keyId is:{}\n,size is:{}=========", keys.toString(), keys.size());
-            //keys.clear();
+            keys.clear();
         }
         logger.info("\n------->第" + (threadName + 1) + "次slice结束<--------切片结果为总数为：{}", titleList.size());
         logger.info("第" + (threadName + 1) + "次总数：{}", searchResponse.getHits().totalHits);
@@ -89,12 +91,12 @@ public class ThreadUtils implements Runnable {
     private TransportClient getClient() {
         try {
             Settings mf = Settings.builder()
-                    .put("cluster.name", "MF")
+                    .put("cluster.name", "MF_Mini")
                     .put("client.transport.sniff", true)
                     .build();
             return new PreBuiltTransportClient(mf).
                     addTransportAddress(new TransportAddress(
-                            InetAddress.getByName("172.24.5.132"), 9305));
+                            InetAddress.getByName("172.24.5.131"), 9309));
         } catch (UnknownHostException e) {
             e.printStackTrace();
         }

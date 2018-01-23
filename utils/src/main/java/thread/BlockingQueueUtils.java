@@ -43,27 +43,28 @@ public class BlockingQueueUtils {
                     .preTags("<em>").postTags("</em>");
             // settings
             Settings settings = Settings.builder()
-                    .put("cluster.name", "MF")
+                    .put("cluster.name", "MF_Mini")
                     .put("client.transport.sniff", true)
                     .build();
             // 准备client
             TransportClient client = new PreBuiltTransportClient(settings).
                     addTransportAddress(new TransportAddress(
                             InetAddress.getByName(hostName), port));
-            String[] indexList = new String[]{"mf_index_2017-12-01", "mf_index_2017-12-04"};
+            String[] indexList = new String[]{"mf_index_2018-01-03"};
             SearchRequestBuilder searchRequestBuilder = client
                     .prepareSearch(indexList)
                     .setTypes("docs");
             // timeRange
+            // timeRange
             RangeQueryBuilder rangeQueryBuilder = QueryBuilders.rangeQuery("pubTime")
-                    .from(1512057600000L, true)
-                    .to(1512252600000L, true);
+                    .from(1502252000000L, true)
+                    .to(1522252600000L, true);
             long sum = 0;
             long beginTime = System.currentTimeMillis();
             Integer max = 3;
             // 存放title
             // keys存放hitId
-            final List<String> keys = new ArrayList<String>();
+            List<String> keys = new CopyOnWriteArrayList<>();
             SearchRequestBuilder searchRequestBuilder1 = searchRequestBuilder.setQuery(QueryBuilders.boolQuery().
                     must(rangeQueryBuilder).
                     filter(QueryBuilders.matchAllQuery()))
@@ -72,27 +73,33 @@ public class BlockingQueueUtils {
                     .setScroll(TimeValue.timeValueMinutes(8))
                     .setFetchSource(include, exclude)
                     .highlighter(highlightBuilder);
+            ThreadPoolUtils threadPoolUtils = new ThreadPoolUtils("test");
             // 借助Executors
+            //ThreadPoolExecutor pool = new ThreadPoolExecutor(1,5,50,TimeUnit.MINUTES);
             ExecutorService service = Executors.newFixedThreadPool(3);
-            // 启动线程
-            //service.submit(new ThreadUtils());
-            // 执行10s
-            //Thread.sleep(10 * 1000);
-            final List<String> titleList = new ArrayList<String>();
+            final List<String> titleList = new ArrayList<>();
             // 循环
             for (int i = 0; i < 3; i++) {
-                final int sliceMax = 3;
-                service.execute(new ThreadUtils(i, sliceMax, searchRequestBuilder1, keys, titleList));
+                //final int sliceMax = 3;
+                service.execute(threadPoolUtils.newThread(
+                        new ThreadUtils("test",i, 3, searchRequestBuilder1, keys, titleList)));
             }
-            //System.out.println(service.);
-            // 退出Executor
+            // 退出Executor,不再接受新的线程进来
             service.shutdown();
-            if (service.isShutdown()) {
-                logger.info("时间消耗:" + (System.currentTimeMillis() - beginTime));
-                logger.info("搜索总数：{}", titleList.size());
+            while (true) {
+                if (service.isTerminated()) {
+                    System.out.println("所有的子线程都结束了");
+                    break;
+                }
             }
+            System.out.println(threadPoolUtils.getStas());
+            long endTime = System.currentTimeMillis();
+            logger.info("时间消耗:{}", endTime - beginTime);
+            logger.info("搜索总数：{}", titleList.size());
         } catch (Exception e) {
             e.printStackTrace();
+        } finally {
+            System.out.println("线程结束");
         }
     }
 
