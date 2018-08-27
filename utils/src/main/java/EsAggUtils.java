@@ -32,10 +32,8 @@ public class EsAggUtils {
     private static final Logger logger = LoggerFactory.getLogger(EsAggUtils.class);
 
     public static void main(String[] args) {
-        String[] include = {"title", "docType"};
-        String[] exclude = {"url"};
-        String hostName = "172.24.5.132";
-        Integer port = 9305;
+        String hostName = "172.24.8.244";
+        Integer port = 9301;
         try {
             long startTime = 1512294313696L;
             long endTime = 1512398713000L;
@@ -44,15 +42,14 @@ public class EsAggUtils {
                     .from(startTime, true)
                     .to(endTime, true);
             Settings settings = Settings.builder()
-                    .put("cluster.name", "MF")
+                    .put("cluster.name", "CL_Normal")
                     .put("client.transport.sniff", true)
                     .build();
             // 准备client
             TransportClient client = new PreBuiltTransportClient(settings).
-                    addTransportAddress(new TransportAddress(
-                            InetAddress.getByName(hostName), port));
+                    addTransportAddress(new TransportAddress(InetAddress.getByName(hostName), port));
             SearchRequestBuilder searchRequestBuilder = client
-                    .prepareSearch("mf_index_2017-12-03", "mf_index_2017-12-04")
+                    .prepareSearch("cl_index_*")
                     .setTypes("docs");
 
             for (int i = 0; i < 3; i++) {
@@ -63,16 +60,17 @@ public class EsAggUtils {
                         .setScroll(TimeValue.timeValueMinutes(5))
                         .slice(sliceBuilder)
                         .addAggregation(
-                                //AggregationBuilders.terms("by_docType"+i).field("url")
-                                AggregationBuilders.histogram("by_pubTime")
-                                        .interval(1000*60*60*24)
+                                AggregationBuilders.terms("by_docType")
+                                        .field("url")
+                                        //AggregationBuilders.histogram("by_pubTime")
+                                        //      .interval(1000 * 60 * 60 * 24)
                                         //.timeZone(DateTimeZone.forID("+08:00"))
 //                                AggregationBuilders
 //                                        .dateHistogram("by_pubTime")
-                                        .field("pubTime")
+                                        // .field("pubTime")
                                         //.dateHistogramInterval(DateHistogramInterval.DAY)
                                         .minDocCount(0L)
-                                        //.timeZone(DateTimeZone.forID("+08:00"))
+                                //.timeZone(DateTimeZone.forID("+08:00"))
                         )
                         .get();
                 Terms terms = searchResponse.getAggregations().get("by_pubTime" + i);

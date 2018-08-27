@@ -16,7 +16,7 @@ public class ThreadPoolUtils implements ThreadFactory {
     private int counter;
     private List<String> stats;
 
-    ThreadPoolUtils(String threadName) {
+    public ThreadPoolUtils(String threadName) {
         this.threadName = threadName;
         counter=0;
         stats = new ArrayList<>();
