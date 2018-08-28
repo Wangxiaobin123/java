@@ -17,6 +17,7 @@ import org.elasticsearch.search.SearchHit;
 import org.elasticsearch.search.slice.SliceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -43,8 +44,10 @@ public class QaValidDataUtils {
 
 
     public static void main(String[] args) {
+        // String hostName = "192.168.67.104";
+        // Integer port = 9302;
         String hostName = "172.24.8.244";
-        Integer port = 9301;
+        Integer port = 9302;
         try {
             // settings
             Settings settings = Settings.builder()
@@ -56,18 +59,24 @@ public class QaValidDataUtils {
                     addTransportAddress(new TransportAddress(
                             InetAddress.getByName(hostName), port));
             // Map places = EsQueryConditionUtils.getPlaces();
-            Map places = EsQueryConditionUtils.getPingjia();
+            // Map places = EsQueryConditionUtils.getPingjia();
+            // Map places = EsQueryConditionUtils.getPingjia();
+            Map places = EsQueryConditionUtils.getQingGan();
             List<String> list = (List<String>) places.getOrDefault("source", new ArrayList<>());
             String[] str = (String[]) places.getOrDefault("condition", new String[]{});
             String docType = (String) places.getOrDefault("docType", "");
             for (String source : list) {
                 // String path = "/Users/wangshengbin/excel/nlpqinggan/" + source + "/";
                 // String path = "/Users/wangshengbin/excel/nlpplaces/" + source + "/";
-                String path = "/Users/wangshengbin/excel/nlppingjia/" + source + "/";
+                String path = "/Users/wangshengbin/excel/nlpqinggan1/" + source + "/";
+                // String path = "/Users/wangshengbin/excel/nlpqinggan/" + source + "/";
+                // String path = "/Users/wangshengbin/excel/nlpspamtag/" + source + "/";
                 creteFile(path);
                 // matchAll
                 SearchRequestBuilder searchRequestBuilder = transportClient.prepareSearch("cl_index_*").setTypes("docs");
                 SearchRequestBuilder searchCountQuery = getPlaceOrPingjiasQueryBuildMatchAll(searchRequestBuilder, source, str, docType);
+                // SearchRequestBuilder searchCountQuery = getPingjiasQueryBuildMatchAll(searchRequestBuilder, source, str, docType);
+                // SearchRequestBuilder searchCountQuery = getSpamTagQueryBuildMatchAll2(searchRequestBuilder, source, str, docType);
                 // Es json
                 getEsJson(searchCountQuery, transportClient, path);
 
@@ -179,23 +188,42 @@ public class QaValidDataUtils {
             JSONObject jsonObject = new JSONObject();
             jsonObject.put("title", sourceAsMap.getOrDefault("title", ""));
             jsonObject.put("url", sourceAsMap.getOrDefault("url", ""));
-            jsonObject.put("content", sourceAsMap.getOrDefault("content", ""));
+            String string = sourceAsMap.getOrDefault("content", "").toString();
+            if (string.length() > 32767) {
+                string = string.substring(0, 32767);
+            }
+            jsonObject.put("content", string);
             jsonObject.put("pubTimeStr", sourceAsMap.getOrDefault("pubTimeStr", ""));
 
-            // jsonObject.put("sysSentiment", sourceAsMap.getOrDefault("sysSentiment", 0));
-            // jsonObject.put("commentSentiment", sourceAsMap.getOrDefault("commentSentiment", 0));
 
-            //String spamTag = (String) sourceAsMap.getOrDefault("spamTag", "");
-
-            List<HashMap> expressionList = (List<HashMap>) sourceAsMap.getOrDefault("expression", new ArrayList<>());
-            if (expressionList == null || expressionList.size() == 0) {
+            Object sysSentiment = sourceAsMap.get("sysSentiment");
+            Object commentSentiment = sourceAsMap.get("commentSentiment");
+            if (sysSentiment == null || commentSentiment == null) {
                 continue;
             }
-            StringBuffer str = new StringBuffer();
-            for (HashMap expressionMap : expressionList) {
-                str.append(expressionMap.get("name")).append(" ");
+            jsonObject.put("sysSentiment", sysSentiment);
+            jsonObject.put("commentSentiment", commentSentiment);
+
+//            String spamTag = (String) sourceAsMap.get("spamTag");
+//            if (spamTag == null) {
+//                continue;
+//            }
+//            jsonObject.put("spamTag", spamTag);
+
+//            List<String> placesList = (List<String>) sourceAsMap.getOrDefault("opinions", new ArrayList<>());
+//            if (placesList == null || placesList.size() == 0) {
+//                continue;
+//            }
+//            StringBuffer str = new StringBuffer();
+//            for (String expressionMap : placesList) {
+//                str.append(expressionMap).append(" ");
+//            }
+//            jsonObject.put("opinions", str);
+            Object commentScore = sourceAsMap.get("commentScore");
+            if (commentScore == null) {
+                continue;
             }
-            jsonObject.put("expression", str);
+            jsonObject.put("commentScore", commentScore);
 
 
 //            List<String> placesList = (List<String>) sourceAsMap.getOrDefault("places", new ArrayList<>());
@@ -233,10 +261,10 @@ public class QaValidDataUtils {
 
         BoolQueryBuilder boolQueryBuilder1 = QueryBuilders.boolQuery();
         TermQueryBuilder termQueryBuilder1 = QueryBuilders.termQuery(docType, source);
-        // 出租、招聘、征婚交友、闲置转让
-        MatchPhraseQueryBuilder matchPhraseQueryBuilder = QueryBuilders.matchPhraseQuery("title", "征婚");
-        MatchPhraseQueryBuilder matchPhraseQueryBuilder1 = QueryBuilders.matchPhraseQuery("title", "交友");
-        TermQueryBuilder termQueryBuilder2 = QueryBuilders.termQuery("spamTag", "marriageSeeking");
+        // 闲置转让
+        MatchPhraseQueryBuilder matchPhraseQueryBuilder = QueryBuilders.matchPhraseQuery("title", "闲置");
+        MatchPhraseQueryBuilder matchPhraseQueryBuilder1 = QueryBuilders.matchPhraseQuery("title", "转让");
+        TermQueryBuilder termQueryBuilder2 = QueryBuilders.termQuery("spamTag", "transfer");
         boolQueryBuilder1.should(matchPhraseQueryBuilder).should(matchPhraseQueryBuilder1).should(termQueryBuilder2).minimumShouldMatch(1);
 
 
@@ -245,6 +273,23 @@ public class QaValidDataUtils {
 
         return searchRequestBuilder
                 .setQuery(boolQueryBuilder2)
+                .setFetchSource(str, null)
+                .addSort("docId", SortOrder.ASC)
+                .setSearchType(SearchType.DEFAULT);
+    }
+
+
+    private static SearchRequestBuilder getSpamTagQueryBuildMatchAll2(SearchRequestBuilder searchRequestBuilder, String source, String[] str, String docType) {
+
+        BoolQueryBuilder boolQueryBuilder1 = QueryBuilders.boolQuery();
+        TermQueryBuilder termQueryBuilder1 = QueryBuilders.termQuery(docType, source);
+
+        // rent ,recruitment
+        TermQueryBuilder termQueryBuilder2 = QueryBuilders.termQuery("spamTag.keyword", "marriageSeeking");
+        boolQueryBuilder1.must(termQueryBuilder2).must(termQueryBuilder1);
+
+        return searchRequestBuilder
+                .setQuery(boolQueryBuilder1)
                 .setFetchSource(str, null)
                 .addSort("docId", SortOrder.ASC)
                 .setSearchType(SearchType.DEFAULT);
@@ -260,6 +305,30 @@ public class QaValidDataUtils {
                 .addSort("docId", SortOrder.ASC)
                 .setScroll(TimeValue.timeValueMinutes(8))
                 .setSearchType(SearchType.DEFAULT);
+    }
+
+
+    private static SearchRequestBuilder getPingjiasQueryBuildMatchAll(SearchRequestBuilder searchRequestBuilder, String source, String[] str, String docType) {
+
+        return searchRequestBuilder
+                .setQuery(
+                        QueryBuilders.boolQuery()
+                                .must(QueryBuilders.termQuery(docType, source)))
+                .setFetchSource(str, null)
+                .addSort("docId", SortOrder.ASC)
+                .setScroll(TimeValue.timeValueMinutes(8))
+                .setSearchType(SearchType.DEFAULT);
+    }
+
+    @Test
+    public void test() {
+        BoolQueryBuilder boolQueryBuilder1 = QueryBuilders.boolQuery();
+        TermQueryBuilder termQueryBuilder1 = QueryBuilders.termQuery("docType", "weibo");
+
+        TermQueryBuilder termQueryBuilder2 = QueryBuilders.termQuery("spamTag", "rent");
+        boolQueryBuilder1.must(termQueryBuilder2).must(termQueryBuilder1);
+
+        logger.info("{}", boolQueryBuilder1);
     }
 
 

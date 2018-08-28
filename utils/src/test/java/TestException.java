@@ -1,4 +1,7 @@
 import org.junit.Test;
+
+import java.util.Random;
+
 /**
  * @author :shengbin
  */
@@ -29,6 +32,14 @@ public class TestException {
             ReportLogUtils reportLogUtils = new ReportLogUtils();
             reportLogUtils.getException(e);
             System.out.println(e.getMessage());
+        }
+    }
+    @Test
+    public void test3() throws InterruptedException {
+        Random random1 = new Random(System.currentTimeMillis());
+        for (int i = 0; i < 5; i++) {
+            Thread.sleep(random1.nextInt(1000));
+            System.out.println("==============");
         }
     }
 }

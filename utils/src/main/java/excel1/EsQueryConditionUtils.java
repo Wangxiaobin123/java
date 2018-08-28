@@ -111,17 +111,8 @@ public class EsQueryConditionUtils {
         Map map = new HashMap();
 
         List<String> list = new ArrayList<>();
-        list.add("news");
-        list.add("app");
         list.add("weibo");
-        list.add("weixin");
-        list.add("media");
-        list.add("wenda");
-        list.add("tieba");
-        list.add("bbs");
-        list.add("blog");
-        list.add("item");
-        list.add("video");
+
 
         String[] str = new String[]{
                 "title",
@@ -181,15 +172,14 @@ public class EsQueryConditionUtils {
 
         list.add("weibo");
 
-        list.add("item");
-
         String[] str = new String[]{
                 "title",
                 "url",
                 "content",
                 "pubTimeStr",
-                "expression",
-                "titleSimHash"
+                "opinions",
+                "titleSimHash",
+                "commentScore"
         };
         map.put("source",list);
         map.put("condition",str);
@@ -224,7 +214,8 @@ public class EsQueryConditionUtils {
                 "pubTimeStr",
                 "commentSentiment",
                 "sysSentiment",
-                "titleSimHash"
+                "titleSimHash",
+                "commentScore"
         };
         map.put("source",list);
         map.put("condition",str);
