@@ -195,17 +195,17 @@ public class EsQueryConditionUtils {
 
         List<String> list = new ArrayList<>();
 
-        list.add("news");
-        list.add("app");
-        list.add("weibo");
-        list.add("weixin");
-        list.add("media");
-        list.add("wenda");
-        list.add("tieba");
-        list.add("bbs");
-        list.add("blog");
+//        list.add("news");
+//        list.add("app");
+//        list.add("weibo");
+//        list.add("weixin");
+//        list.add("media");
+//        list.add("wenda");
+//        list.add("tieba");
+//        list.add("bbs");
+//        list.add("blog");
         list.add("item");
-        list.add("video");
+        //list.add("video");
 
         String[] str = new String[]{
                 "title",

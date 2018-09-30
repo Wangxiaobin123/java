@@ -68,7 +68,7 @@ public class QaValidDataUtils {
             for (String source : list) {
                 // String path = "/Users/wangshengbin/excel/nlpqinggan/" + source + "/";
                 // String path = "/Users/wangshengbin/excel/nlpplaces/" + source + "/";
-                String path = "/Users/wangshengbin/excel/nlpqinggan1/" + source + "/";
+                String path = "/Users/wangshengbin/excel/nlpqinggan4/" + source + "/";
                 // String path = "/Users/wangshengbin/excel/nlpqinggan/" + source + "/";
                 // String path = "/Users/wangshengbin/excel/nlpspamtag/" + source + "/";
                 creteFile(path);
@@ -198,7 +198,7 @@ public class QaValidDataUtils {
 
             Object sysSentiment = sourceAsMap.get("sysSentiment");
             Object commentSentiment = sourceAsMap.get("commentSentiment");
-            if (sysSentiment == null || commentSentiment == null) {
+            if (sysSentiment == null) {
                 continue;
             }
             jsonObject.put("sysSentiment", sysSentiment);
@@ -221,6 +221,10 @@ public class QaValidDataUtils {
 //            jsonObject.put("opinions", str);
             Object commentScore = sourceAsMap.get("commentScore");
             if (commentScore == null) {
+                continue;
+            }
+            Double score = Double.valueOf(commentScore.toString());
+            if (score != 4) {
                 continue;
             }
             jsonObject.put("commentScore", commentScore);
@@ -246,7 +250,6 @@ public class QaValidDataUtils {
         map.put("num", sum);
         return null;
     }
-
 
     /**
      * matchAll query
