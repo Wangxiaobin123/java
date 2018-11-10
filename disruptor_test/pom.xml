@@ -6,11 +6,14 @@
         <artifactId>mf_parent</artifactId>
         <groupId>mf_test_wsb</groupId>
         <version>1.0-snapshot</version>
+        <relativePath>../pom.xml</relativePath>
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>disruptor_test</groupId>
     <artifactId>disruptor_test</artifactId>
+    <version>1.0-snapshot</version>
+
 
 
     <dependencies>

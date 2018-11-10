@@ -47,7 +47,9 @@ public class EsUtilsTest {
     private static final String HOST_NAME = "172.24.5.131";
     private static final Integer PORT = 9309;
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
+    @Test
+    public void test() {
         //9300端口是tcp 1507787100000L + 1000 * 60 * 60*2
 //        long startTime = 1510277400000L;
 //        long endTime = 1511539200000L;

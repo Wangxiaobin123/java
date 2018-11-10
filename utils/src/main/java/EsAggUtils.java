@@ -18,6 +18,7 @@ import org.elasticsearch.search.slice.SliceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
 import org.joda.time.DateTimeZone;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -31,7 +32,9 @@ import java.util.Map;
 public class EsAggUtils {
     private static final Logger logger = LoggerFactory.getLogger(EsAggUtils.class);
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
+    @Test
+    public void test() {
         String hostName = "172.24.8.244";
         Integer port = 9301;
         try {

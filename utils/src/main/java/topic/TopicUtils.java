@@ -10,7 +10,7 @@ import java.sql.*;
  */
 public class TopicUtils {
 
-    public static void main(String[] args) {
+    public static void main1(String[] args) {
         String url = "jdbc:mysql://" + args[0] + "/bfd_mf_data?autoReconnect=true";
         String driverName = "com.mysql.jdbc.Driver";
         String user = args[1];

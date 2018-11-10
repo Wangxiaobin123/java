@@ -12,6 +12,8 @@
 
     <groupId>mf_test_service</groupId>
     <artifactId>test_service</artifactId>
+    <version>1.0-snapshot</version>
+
 
     <dependencies>
 

@@ -13,6 +13,7 @@ import org.elasticsearch.search.fetch.subphase.highlight.HighlightField;
 import org.elasticsearch.search.slice.SliceBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -49,7 +50,9 @@ import java.util.Map;
 public class EsHighlightUtils {
     private static final Logger logger = LoggerFactory.getLogger(EsUtilsTest.class);
 
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
+    @Test
+    public void test() {
         String[] include = {"title", "docType"};
         String[] exclude = {"url"};
         String hostName = "172.24.5.132";
@@ -58,7 +61,7 @@ public class EsHighlightUtils {
             HighlightBuilder highlightBuilder = new HighlightBuilder()
                     .field("title", 5)
                     .field("content", 3)
-                   // .fragmenter("span")
+                    // .fragmenter("span")
                     .preTags("<em>").postTags("</em>");
 
             Settings settings = Settings.builder()
@@ -71,7 +74,7 @@ public class EsHighlightUtils {
                             InetAddress.getByName(hostName), port));
             SearchRequestBuilder searchRequestBuilder = client.prepareSearch("bfd_mf_v1")
                     .setTypes("doc");
-            SliceBuilder sliceBuilder = new SliceBuilder("pubTime",0,10);
+            SliceBuilder sliceBuilder = new SliceBuilder("pubTime", 0, 10);
             SearchResponse searchResponse = searchRequestBuilder
                     .setQuery(QueryBuilders.boolQuery().
                             filter(QueryBuilders.matchPhraseQuery("title", "大数据")).

@@ -10,6 +10,7 @@ import org.elasticsearch.index.query.RangeQueryBuilder;
 import org.elasticsearch.search.fetch.subphase.highlight.HighlightBuilder;
 import org.elasticsearch.search.sort.SortOrder;
 import org.elasticsearch.transport.client.PreBuiltTransportClient;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -24,7 +25,9 @@ import java.util.concurrent.*;
 public class BlockingQueueUtils {
     private static final Logger logger = LoggerFactory.getLogger(BlockingQueueUtils.class);
 
-    public static void main(String[] args) throws InterruptedException {
+   // public static void main(String[] args) throws InterruptedException {
+   @Test
+   public void test() {
         String[] include = {"title", "docType"};
         String[] exclude = {"content"};
         String hostName = "172.24.5.131";

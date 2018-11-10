@@ -43,7 +43,9 @@ public class QaValidDataUtils {
     private static final Integer sliceMax = 3;
 
 
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
+    @Test
+    public void test1() {
         // String hostName = "192.168.67.104";
         // Integer port = 9302;
         String hostName = "172.24.8.244";

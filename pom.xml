@@ -44,13 +44,6 @@
             <version>2.0.0.RELEASE</version>
             <scope>test</scope>
         </dependency>
-        <!-- https://mvnrepository.com/artifact/org.spockframework/spock-core -->
-        <dependency>
-            <groupId>org.spockframework</groupId>
-            <artifactId>spock-core</artifactId>
-            <version>1.1-groovy-2.4</version>
-            <scope>test</scope>
-        </dependency>
         <!-- https://mvnrepository.com/artifact/org.spockframework/spock-spring -->
         <dependency>
             <groupId>org.spockframework</groupId>

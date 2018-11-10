@@ -11,6 +11,7 @@
 
     <groupId>mf_test_schedule</groupId>
     <artifactId>mf_test_schedule_job</artifactId>
+    <version>1.0-snapshot</version>
 
     <dependencies>
         <!-- spring boot -->

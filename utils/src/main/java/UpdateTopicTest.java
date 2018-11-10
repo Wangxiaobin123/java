@@ -1,6 +1,10 @@
+import org.junit.Test;
+
 import java.sql.*;
 public class UpdateTopicTest {
-    public static void main(String[] args) {
+    // public static void main(String[] args) {
+    @Test
+    public void test() {
         String url = "jdbc:mysql://" + "192.168.67.99:3306" + "/bfd_mf_data?autoReconnect=true";
         String driverName = "com.mysql.jdbc.Driver";
         String user = "bfd_mf_v3_qa";

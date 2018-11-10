@@ -33,7 +33,9 @@ import java.util.Map;
 public class EsScrollSliceUtils {
     private static final Logger logger = LoggerFactory.getLogger(EsScrollSliceUtils.class);
 
-    public static void main(String[] args) {
+    //public static void main(String[] args) {
+    @Test
+    public void test() {
         String[] include = {"title", "docType", "content"};
         // String[] exclude = {"url"};
         String hostName = "172.24.5.131";
